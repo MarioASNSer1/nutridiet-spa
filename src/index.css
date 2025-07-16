@@ -1,0 +1,265 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ✅ CSS Variables - Paleta de colores personalizada */
+:root {
+  --primary-dark: #11472f;
+  --primary-medium: #799f38;
+  --primary-light: #e5aa7e;
+  --bs-primary: #11472f;
+  --bs-success: #799f38;
+  --bs-warning: #e5aa7e;
+}
+
+/* ✅ Configuración base SIN interferir con Bootstrap */
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ✅ Tipografía personalizada */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* ✅ Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✅ Cards personalizadas */
+.feature-card {
+  transition: all 0.3s ease;
+  border: none !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Botones personalizados */
+.btn-primary-custom {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  color: white !important;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-medium) !important;
+  border-color: var(--primary-medium) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(17, 71, 47, 0.3);
+}
+
+.btn-secondary-custom {
+  background-color: var(--primary-light) !important;
+  border-color: var(--primary-light) !important;
+  color: var(--primary-dark) !important;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #d49968 !important;
+  border-color: #d49968 !important;
+  color: var(--primary-dark) !important;
+  transform: translateY(-2px);
+}
+
+/* ✅ Clases de utilidad de color */
+.text-primary-custom {
+  color: var(--primary-dark) !important;
+}
+
+.text-secondary-custom {
+  color: var(--primary-medium) !important;
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-dark) !important;
+}
+
+.bg-secondary-custom {
+  background-color: var(--primary-light) !important;
+}
+
+/* ✅ Footer */
+footer {
+  background-color: var(--primary-dark) !important;
+  color: white !important;
+  margin-top: auto;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary-light) !important;
+}
+
+/* ✅ Dashboard Sidebar */
+.dashboard-sidebar {
+  background-color: var(--primary-dark) !important;
+  min-height: calc(100vh - 76px);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: none !important;
+  background: none !important;
+  text-align: left;
+  width: 100%;
+}
+
+.dashboard-sidebar .nav-link:hover,
+.dashboard-sidebar .nav-link.active {
+  background-color: var(--primary-medium) !important;
+  color: white !important;
+  transform: translateX(5px);
+}
+
+/* cards con planes */
+.plan-card {
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.plan-card:hover {
+  border-color: var(--primary-medium) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.featured {
+  border-color: var(--primary-dark) !important;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(17, 71, 47, 0.2);
+}
+
+.plan-card.featured::before {
+  content: "Más Popular";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* estilos formularios */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-medium) !important;
+  box-shadow: 0 0 0 0.2rem rgba(121, 159, 56, 0.25) !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+/* barras de progreso estilos*/
+.progress-bar.bg-primary-custom {
+  background-color: var(--primary-dark) !important;
+}
+
+/* estilos del navbar*/
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-medium) !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-medium);
+  border-radius: 2px;
+}
+
+/* estilos para mobile*/
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
+
+  .dashboard-sidebar {
+    min-height: auto;
+  }
+
+  .plan-card.featured::before {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .btn-primary-custom,
+  .btn-secondary-custom {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
