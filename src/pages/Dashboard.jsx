@@ -1,12 +1,11 @@
 "use client"
+"use client";
 
-import { useState } from "react"
-import Header from "../components/Header"
-import perfilImg from "../assets/perfil.jpg"
-import Footer from "../components/Footer"
-
-import { ListGroup, Button, ProgressBar } from "react-bootstrap"
-
+import { Button, Card, ListGroup, ProgressBar } from "react-bootstrap";
+import { useState } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import perfilImg from "../assets/perfil.jpg";
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState("resumen")
